@@ -288,7 +288,7 @@ def main():
         pass
 
     if(len(args) >= 2):
-        (email, password) = args[0:1]
+        (email, password) = args[:2]
     else:
         email = input("Mint email: ")
         password = getpass.getpass("Password: ")
